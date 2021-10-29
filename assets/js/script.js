@@ -5,10 +5,16 @@ function myFunction() {
 }*/
 
 let noESounds = document.getElementsByClassName("noESound");
-let ESound = document.getElementsByClassName("ESound");
+let ESounds = document.getElementsByClassName("ESound");
 
 for (let noESound of noESounds) {
   noESound.addEventListener("click", function(){
     this.style.backgroundColor = "red";
+  })
+}
+
+for (let ESound of ESounds) {
+  ESound.addEventListener("click", function(){
+    this.style.backgroundColor = "green";
   })
 }
