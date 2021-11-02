@@ -37,9 +37,10 @@ console.log(wrongAnswers);
 console.log(wrongAnswers[0]);
 
 function checkAnswer(){
-  if(element.classList.contains("ESound")) {
+  if(this.classList.contains("ESound")) {
     this.style.backgroundColor = "green";
     alert ("Correct! This word contains a long e sound!");
+    this.removeEventListener("click", checkAnswer)
     incrementScore();
   } else {
     this.style.backgroundColor = "red";
