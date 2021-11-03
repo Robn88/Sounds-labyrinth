@@ -51,6 +51,12 @@ td {
   height: 4rem;
   text-align: center;
 }
+
+/*Prevents pointer-events from being fired out of order*/
+.word {
+  pointer-events: none;
+}
+
 /*Disable class added by the checkAnswer function*/
 .disable {
   pointer-events: none;
