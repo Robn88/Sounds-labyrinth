@@ -51,9 +51,21 @@ td {
   height: 4rem;
   text-align: center;
 }
-
+/*Disable class added by the checkAnswer function*/
 .disable {
   pointer-events: none;
+}
+
+/*Adds green background color to correct answer via the checkAnswer function*/
+
+.greenBackground {
+  background-color: green;
+}
+
+/*Adds red background color to correct answer via the checkAnswer function*/
+
+.redBackground {
+  background-color: red;
 }
 
 /* Codepen*/

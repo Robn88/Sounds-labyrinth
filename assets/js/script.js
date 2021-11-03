@@ -1,3 +1,5 @@
+
+
 /** Starts the game */
 
 document.getElementById("start").addEventListener("click", function(){
@@ -38,12 +40,12 @@ console.log(wrongAnswers[0]);
 
 function checkAnswer(){
   if(this.classList.contains("ESound")) {
-    this.style.backgroundColor = "green";
+    this.classList.add("greenBackground");
     alert ("Correct! This word contains a long e sound!");
     this.classList.add("disable")
     incrementScore();
   } else {
-    this.style.backgroundColor = "red";
+    this.classList.add("redBackground");
     alert ("Bad luck- this word doesn't contain a long e sound!");
     this.classList.add("disable")
     incrementWrongAnswer();
