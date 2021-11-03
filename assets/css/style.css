@@ -52,6 +52,9 @@ td {
   text-align: center;
 }
 
+.disable {
+  pointer-events: none;
+}
 
 /* Codepen*/
 

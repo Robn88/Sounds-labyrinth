@@ -14,4 +14,7 @@ Sounds labyrinth is a dynamic game,designed for students of English as a foreign
 
 <h2>Credits</h2>
 <h3>Content</h3>
+
+getRandom function on line 16-28 of script.js:
+https://stackoverflow.com/questions/50525909/random-item-from-array-with-no-repeat-using-javascript/50528028
 <h3>Media</h3>
