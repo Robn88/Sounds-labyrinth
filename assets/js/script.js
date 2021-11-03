@@ -1,4 +1,4 @@
-
+/* jshint esversion: 8 */ 
 
 /** Starts the game */
 
@@ -8,6 +8,10 @@ document.getElementById("start").addEventListener("click", function(){
 })
 
 document.getElementById("a2").addEventListener("click", checkAnswer)
+document.getElementById("a2").addEventListener("click", function(){
+  document.getElementById("a3").innerHTML = rightAnswers[1]
+  document.getElementById("b2").innerHTML = wrongAnswers[1];
+})
 document.getElementById("b1").addEventListener("click", checkAnswer)
 
 
