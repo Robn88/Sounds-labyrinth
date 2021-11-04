@@ -15,7 +15,7 @@ h1 {
 #instructions {
   float: right;
   height: 20rem;
-  width: 20rem;
+  width: 25rem;
   font-size: 1.25rem;
   margin-right: 10rem;
   margin-top: 0;
@@ -29,7 +29,7 @@ h1 {
 
 #score-area {
   float: right;
-  width: 20rem;
+  width: 25rem;
   font-size: 1.25rem;
   margin-right: 10rem;
   margin-left: 5%;

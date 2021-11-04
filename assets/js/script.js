@@ -176,11 +176,10 @@ document.getElementById("e5").addEventListener("click", function () {
 })
 
 //add checkAnswer event listener for cells e6 and f5 and call end of game function
-document.getElementById("e6").addEventListener("click", checkAnswer)
-document.getElementById("e6").addEventListener("click", function () {
- 
-})
+document.getElementById("e6").addEventListener("click", checkAnswer);
 document.getElementById("f5").addEventListener("click", checkAnswer);
+
+//end game alert
 
 var correctWords = ["even", "Steven", "evil", "meet", "meat", "area", "legal", "be", "achieve", "belief", "sheep", "beat", "free", "clear", "breathe", "leave", "baby", "family", "piece", "any", "beach", "key", "cream", "fear", "recent"];
 var incorrectWords = ["bet", "left", "health", "dead", "breath", "live", "fitness", "bread", "ship", "felt", "England", "July", "fry", "silent", "think", "eleven", "met", "with"];
