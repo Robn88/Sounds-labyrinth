@@ -210,12 +210,19 @@ function checkAnswer() {
   if (this.classList.contains("ESound")) {
     this.classList.add("greenBackground");
     openModal()
-    document.getElementById("modal-text").innerHTML= modalCorrectText
-    this.classList.add("disable")
+    let currentRightAnswer = this.innerText;
+    console.log(currentRightAnswer);
+    let modalCorrectText = `Well done, '${currentRightAnswer}' contains a long e sound!`
+    document.getElementById("modal-text").innerHTML = modalCorrectText;
+    this.classList.add("disable");
     incrementScore();
   } else {
     this.classList.add("redBackground");
-    alert("Bad luck- this word doesn't contain a long e sound!");
+    openModal()
+    let currentWrongAnswer = this.innerText;
+    console.log(currentWrongAnswer);
+    let modalIncorrectText = `Bad luck, '${currentWrongAnswer}' does not contain a long e sound!`
+    document.getElementById("modal-text").innerHTML = modalIncorrectText;
     this.classList.add("disable")
     incrementWrongAnswer();
   }
@@ -265,4 +272,5 @@ window.onclick = function(event) {
   }
 }
 
-let modalCorrectText = `Well done, ${this.correctWords} contains a long e sound!`
+let modalCorrectText = `Well done, ${this.innerText} contains a long e sound!`
+

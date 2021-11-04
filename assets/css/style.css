@@ -90,7 +90,7 @@ $body-background: #353535;*/
 }*/
 
 
-.text-effect {
+/*.text-effect {
   font-family: "Zen Antique Soft", sans-serif;
   background: linear-gradient(to right, gold 10%,black 50%,silver 60%);
   background-size: auto auto;
@@ -110,6 +110,9 @@ $body-background: #353535;*/
     background-position: 200% center;
   }
 }
+*/
+/*text effects*/
+
 
 
 /* The Modal (background) */
