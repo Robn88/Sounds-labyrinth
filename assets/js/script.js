@@ -201,17 +201,16 @@ function getRandom(count, arr) {
 
 
 let rightAnswers = (getRandom(21, correctWords));
-console.log(rightAnswers)
-console.log(rightAnswers[1]);
+
 
 let wrongAnswers = (getRandom(15, incorrectWords));
-console.log(wrongAnswers);
-console.log(wrongAnswers[0]);
+
 
 function checkAnswer() {
   if (this.classList.contains("ESound")) {
     this.classList.add("greenBackground");
-    openCorrectModal()
+    openModal()
+    document.getElementById("modal-text").innerHTML= modalCorrectText
     this.classList.add("disable")
     incrementScore();
   } else {
@@ -250,18 +249,20 @@ var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-function openCorrectModal() {
-  modal.style.display = "block";
+function openModal() {
+  modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
+
+let modalCorrectText = `Well done, ${this.correctWords} contains a long e sound!`
