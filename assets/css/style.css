@@ -206,10 +206,11 @@ $body-background: #353535;*/
   }
 
   #instructions {
-  float: none;
+    float: none;
+    width: auto;
   }
 
-  #score-area{
+  #score-area {
     width: auto;
     float: none;
   }
@@ -237,21 +238,25 @@ $body-background: #353535;*/
   #instructions {
     float: none;
     width: auto;
-    }
+  }
 
-  #score-area{
+  #score-area {
     width: auto;
     float: none;
+  }
+  table {
+    margin-left: 0;
   }
 
   td {
     font-size: 0.80em;
-    width: 12vw;
+    width: 14vw;
     height: 6vh;
   }
+}
 
-  @media (min-width: 320px) and (max-width: 410px) {
-  
+@media (min-width: 320px) and (max-width: 410px) {
+
   #instructions,
   #score-area {
     font-size: 1rem;
@@ -262,14 +267,18 @@ $body-background: #353535;*/
     width: auto;
   }
 
-  #score-area{
+  #score-area {
     width: auto;
     float: none;
   }
 
+  table {
+    margin-left: 0;
+  }
+
   td {
     font-size: 0.80em;
-    width: 10vw;
+    width: 14vw;
     height: 6vh;
   }
- } }
+}
