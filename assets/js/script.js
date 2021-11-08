@@ -157,6 +157,7 @@ document.getElementById("e3").addEventListener("click", checkAnswer)
 document.getElementById("e3").addEventListener("click", function () {
   document.getElementById("e4").innerHTML = rightAnswers[16];
   document.getElementById("e4").classList.remove("word");
+  document.getElementById("f4").addEventListener("click", checkAnswer);
 })
 
 //add checkAnswer event listener for cell e4 and print next answer
