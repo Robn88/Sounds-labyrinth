@@ -13,6 +13,8 @@ h1 {
   margin-top: 0;
 }
 
+/*style for instructions section*/
+
 #instructions {
   float: right;
   width: 40vw;
@@ -27,6 +29,8 @@ h1 {
 
 }
 
+/*style for score area section*/
+
 #score-area {
   float: right;
   width: 40vw;
@@ -35,6 +39,8 @@ h1 {
   margin-left: 5%;
   clear: both;
 }
+
+/*style for table*/
 
 table {
   margin-left: 5vw;
@@ -52,23 +58,23 @@ td {
   text-align: center;
 }
 
-/*Prevents pointer-events from being fired out of order*/
+/*prevents pointer-events from being fired out of order*/
 .word {
   pointer-events: none;
 }
 
-/*Disable class added by the checkAnswer function*/
+/*disable class added by the checkAnswer function*/
 .disable {
   pointer-events: none;
 }
 
-/*Adds green background color to correct answer via the checkAnswer function*/
+/*adds green background color to correct answer via the checkAnswer function*/
 
 .greenBackground {
   background-color: green;
 }
 
-/*Adds red background color to correct answer via the checkAnswer function*/
+/*adds red background color to correct answer via the checkAnswer function*/
 
 .redBackground {
   background-color: red;
@@ -118,25 +124,17 @@ $body-background: #353535;*/
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+
 }
 
 /* Modal Content */
@@ -244,6 +242,7 @@ $body-background: #353535;*/
     width: auto;
     float: none;
   }
+
   table {
     margin-left: 0;
   }

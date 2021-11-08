@@ -10,7 +10,9 @@
 </head>
 
 <body>
+    <!--header-->
     <h1>Sounds labyrinth</h1>
+    <!--game instructions-->
     <section id="instructions">
         <h2>Instructions</h2>
         <p>You must navigate through the maze, moving either horizontally or vertically, and only onto a square
@@ -18,12 +20,12 @@
             sound, but 'b<u>e</u>ar' doesn't. </p>
         <p>Click start to begin!</p>
     </section>
-
+<!--score counter-->
     <section id="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </section>
-
+<!--table containing cells to be filled by js-->
     <table>
         <tr>
             <td id="start" , class="shimmer">Start</td>
@@ -71,14 +73,14 @@
             <td class="noESound word" , id="c6"></td>
             <td class="noESound word" , id="d6"></td>
             <td class="ESound word" , id="e6"></td>
-            <td id="finish">Finish</td>
+            <td class="word" , id="finish" >Finish</td>
         </tr>
     </table>
 
-    <!-- The Modal -->
+    <!-- the modal -->
     <div id="myModal" class="modal">
 
-        <!-- Modal content -->
+        <!-- modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
             <p id="modal-text"></p>
