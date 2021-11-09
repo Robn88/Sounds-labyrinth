@@ -186,12 +186,22 @@ document.getElementById("f5").addEventListener("click", checkAnswer);
 
 //end game alert
 document.getElementById("finish").addEventListener("click", function(){
-  openModal();
-  let modalEndGameText = "Game over, thanks for playing!";
-  document.getElementById("modal-text").innerHTML = modalEndGameText;
-  console.log(document.getElementById("incorrect").innerHTML);
-})
-
+  let finalScore = document.getElementById("incorrect").innerText;
+  console.log(finalScore);
+  if (finalScore === 0) {
+    openModal();
+    let modalPerfectGameText = "Wow, perfect game! You made 0 mistakes! Congratulations!";
+    document.getElementById("modal-text").innerHTML = modalPerfectGameText;
+  } else if (finalScore === 1) {
+    openModal();
+    let modalEndGameText = `You made it to the end, well done! You made only ${finalScore} mistake. Play again to try and get a perect score!`;
+    document.getElementById("modal-text").innerHTML = modalEndGameText;
+  } else {
+    openModal();
+    let modalEndGameText = `You made it to the end, well done! You made ${finalScore} mistakes. Play again to try and get a perect score!`;
+    document.getElementById("modal-text").innerHTML = modalEndGameText;
+  }
+});
 var correctWords = ["even", "Steven", "evil", "meet", "meat", "area", "legal", "be", "achieve", "belief", "sheep", "beat", "free", "clear", "breathe", "leave", "baby", "family", "piece", "any", "beach", "key", "cream", "fear", "recent"];
 var incorrectWords = ["bet", "left", "health", "dead", "breath", "live", "fitness", "bread", "ship", "felt", "England", "July", "fry", "silent", "think", "eleven", "met", "with"];
 
