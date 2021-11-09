@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
 
-/** Starts the game */
+//Starts the game
 
 document.getElementById("start").addEventListener("click", function () {
   document.getElementById("a2").innerHTML = rightAnswers[0];
@@ -179,31 +179,35 @@ document.getElementById("e5").addEventListener("click", function () {
 //add checkAnswer event listener for cells e6 and f5 and call end of game function
 document.getElementById("e6").addEventListener("click", checkAnswer);
 document.getElementById("e6").addEventListener("click", function () {
-  document.getElementById("finish").innerHTML = "Click to finish!"
+  document.getElementById("finish").innerHTML = "Click to finish!";
   document.getElementById("finish").classList.remove("word");
 });
 document.getElementById("f5").addEventListener("click", checkAnswer);
 
-//end game alert
+//end game function
 document.getElementById("finish").addEventListener("click", function(){
   let finalScore = document.getElementById("incorrect").innerText;
-  console.log(finalScore);
-  if (finalScore === 0) {
+  if (finalScore == 0) {
     openModal();
     let modalPerfectGameText = "Wow, perfect game! You made 0 mistakes! Congratulations!";
     document.getElementById("modal-text").innerHTML = modalPerfectGameText;
-  } else if (finalScore === 1) {
+  } else if (finalScore == 1) {
     openModal();
-    let modalEndGameText = `You made it to the end, well done! You made only ${finalScore} mistake. Play again to try and get a perect score!`;
+    let modalEndGameText = `You made it to the end, well done! You made only ${finalScore} mistake. Play again to try and get a perfect score!`;
     document.getElementById("modal-text").innerHTML = modalEndGameText;
   } else {
     openModal();
-    let modalEndGameText = `You made it to the end, well done! You made ${finalScore} mistakes. Play again to try and get a perect score!`;
+    let modalEndGameText = `You made it to the end, well done! You made ${finalScore} mistakes. Play again to try and get a perfect score!`;
     document.getElementById("modal-text").innerHTML = modalEndGameText;
   }
 });
-var correctWords = ["even", "Steven", "evil", "meet", "meat", "area", "legal", "be", "achieve", "belief", "sheep", "beat", "free", "clear", "breathe", "leave", "baby", "family", "piece", "any", "beach", "key", "cream", "fear", "recent"];
-var incorrectWords = ["bet", "left", "health", "dead", "breath", "live", "fitness", "bread", "ship", "felt", "England", "July", "fry", "silent", "think", "eleven", "met", "with"];
+
+//arrays containing dictionary of words, to be called and randomised by the function getRandom
+let correctWords = ["even", "Steven", "evil", "meet", "meat", "area", "legal", "be", "achieve", "belief", "sheep", "beat", "free", "clear", "breathe", "leave", "baby", "family", "piece", "any", "beach", "key", "cream", "fear", "recent", "weird"];
+let incorrectWords = ["bet", "left", "health", "dead", "breath", "live", "fitness", "bread", "ship", "felt", "England", "July", "fry", "silent", "think", "eleven", "met", "with", "difficult"];
+
+/*function that gets a random element from an array, checks to make sure it has not already been called,
+ and pushes it to the array "answer"*/
 
 function getRandom(count, arr) {
   let answer = [],
@@ -220,13 +224,12 @@ function getRandom(count, arr) {
   return answer;
 }
 
-
+//creates the dictionary of both right and wrong answers that will be used during the game
 let rightAnswers = (getRandom(21, correctWords));
-
 
 let wrongAnswers = (getRandom(15, incorrectWords));
 
-
+// function to check the answer, display modal,increment the score, and remove event listener
 function checkAnswer() {
   if (this.classList.contains("ESound")) {
     this.classList.add("greenBackground");
@@ -247,9 +250,7 @@ function checkAnswer() {
   }
 }
 
-/**
- * Gets the current score from the DOM and increments it by 1
- */
+//Gets the current score from the DOM and increments it by 1
 function incrementScore() {
 
   let oldScore = parseInt(document.getElementById("score").innerText);
@@ -257,9 +258,7 @@ function incrementScore() {
 
 }
 
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
- */
+//Gets the current tally of incorrect answers from the DOM and increments it by 1
 function incrementWrongAnswer() {
 
   let oldScore = parseInt(document.getElementById("incorrect").innerText);
