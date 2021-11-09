@@ -6,8 +6,11 @@ Sounds labyrinth is a dynamic game,designed for students of English as a foreign
 
 ## __UX__
 * The site has been designed to be as minimalist as possible, with a stripped-down approach. Only what is required is displayed on the site. For many laptops, no scrolling will be required, and for smaller devices, the site is structured in such a way that the game area is separate and can be interacted with easily.
+
 ### __Colour Scheme__
 * The colour scheme uses the background color of 'Cornsilk', which is neutral, and contrasts well with the black that is used for the fonts. When clicking on the cells of the grid, they will be coloured either red or green according to the answer that is input, which makes for a striking contrast to the simple base colours of the website.
+
+![image of different colours used](documentation/readme/color_scheme.png)
 
 ### __Typography__
 * The font used is [Zen Antique Soft](https://fonts.google.com/specimen/Zen+Antique+Soft). It was chosen for its simplicity, and professional look.
@@ -25,14 +28,22 @@ index.html wireframe:
 __Instructions section__
   * A section that gives the basic details on how to play the game, with an example, and the method to initiate the game.
 
+  ![]()
+
 __Score area__
   * A section that keeps a tally of correct and incorrect answers.
+
+  ![]()
 
 __Table containing cells to be filled with words by Javascript__
   * A 6x6 table, with only 2 cells filled at the beginning indicating the start and the finish point. To begin with, no 'game' cells are visible; the first two will be revealed upon clicking 'Start'. Through javascript,when clicked, the cells will either be coloured red if an answer is incorrect, or green if correct. A correct answer has the additional effect of revealing more cells.
 
+  ![]()
+
   __The modal__
   * A modal, which is to be called when either a right or wrong answer is clicked, and additionally upon ending the game. The message displayed therein will vary according to how it is called. The modal has a number of interesting features. For example, it is all white, and when called, the background is dimmed, thus making it easier to read. In addition, a user can click anywhere outside of the modal, and not on the 'X', to close it.
+
+  ![]()
 
 ### __Features to be Implemented__
 
@@ -57,6 +68,7 @@ __Reduce repetition of code in script.js__
   *  The repository is hosted on GitHub, which allowed for version control.
   * Gitpod was the workspace used to code, and build the content of the website, which would then be committed to GitHub.
   * Git was used for version control.
+  * The website coolors.co was used to create 
 
 ## __Testing__
 
