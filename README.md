@@ -1,6 +1,6 @@
 # Sounds labyrinth
 
-Sounds labyrinth is a dynamic game,designed for students of English as a foreign language to practice their pronunciation. The basic premise of the game is to go from the start to the finish, clicking horizontally or vertically on a table cell that has the word with the target sound, in this case, the long 'e'. The pool of words, both correct and incorrect, will be randomly drawn from a pool at the game start to ensure replayability. A score tracker will record correct and incorrect answers. It is targeted at both EFL students and EFL teachers.
+Sounds labyrinth is a dynamic game,designed for students of English as a foreign language to practice their pronunciation. The basic premise of the game is to go from the start to the finish, clicking horizontally or vertically on a table cell that has the word with the target sound, in this case, the long 'e'. The pool of words, both correct and incorrect, will be randomly drawn from a pool at the game start to ensure an aspect of replayability. A score tracker will record correct and incorrect answers. It is targeted at both EFL students and EFL teachers.
 
 ## __UX__
 * The site has been designed to be as minimalist as possible, with a stripped-down approach. Only what is required is displayed on the site. For many laptops, no scrolling will be required, and for smaller devices, the site is structured in such a way that the game area is separate and can be interacted with easily.
@@ -12,6 +12,9 @@ Sounds labyrinth is a dynamic game,designed for students of English as a foreign
 
 ### __Wireframes__
 
+index.html wireframe:
+
+![Landing page wireframe one](documentation/wireframes/wireframe_screenshot.png)
 ## __Features__
 
 ### __Existing Features__
@@ -24,67 +27,38 @@ __Score area__
   * A section that keeps a tally of correct and incorrect answers.
 
 __Table containing cells to be filled with words by Javascript__
-  * A 6x6 table, with only 2 cells filled at the beginning indicating the start and the finish point.
+  * A 6x6 table, with only 2 cells filled at the beginning indicating the start and the finish point. To begin with, no 'game' cells are visible; the first two will be revealed upon clicking 'Start'. Through javascript,when clicked, the cells will either be coloured red if an answer is incorrect, or green if correct. A correct answer has the additional effect of revealing more cells.
+
+  __The modal__
+  * A modal, which is to be called when either a right or wrong answer is clicked, and additionally upon ending the game. The message displayed therein will vary according to how it is called. The modal has a number of interesting features. For example, it is all white, and when called, the background is dimmed, thus making it easier to read. In addition, a user can click anywhere outside of the modal, and not on the 'X', to close it.
 
 ### __Features to be Implemented__
 
-__New feature 1__
-  * 
-  * 
+__A truly random maze path__
+  * As it currently stands, the major drawback of the game is that the path from start to finish is predefined. Therefore, there is little to no replayability, despite the randomness of the words. Consequently, the most urgent feature to be implemented in the future should be a way to randomise the layout of the maze, to greatly magnify the replayability. I currently lack the coding knowledge to do this; however, this is something that I believe can be done.
 
-__New feature 2__
-  * 
+__Create sound button__
+  * An interesting option that I had considered when creating the site would be to create a button with a 'sound' icon that, when pressed, models the pronunciation of the word. There are also different ways that this could potentially be implemented. For example, for very low level learners, this could be a feature in the game at the start, to help them when choosing the word. However, for most learners, this would make the game too easy; instead, what might be preferable would be to have this feature enabled upon completing the game; that way, they would be able to focus on incorrect answers, or answers where they weren't sure, or were only able to get the right answer through deduction (i.e, they are certain that one of the words does not have the correct sound, therefore it must be the other, even if they are unsure of its pronunciation).
+
+  __Create option for teachers to change the content of the cells__
+  * The game as it is, being preconfigured to practice a very specific element of pronunciation, has a singular and narrow-minded scope from the point of view of both teacher and student. Despite this, with some adjustments, the site might be reconfigured in order to let a teacher change the scope. What if a teacher wanted to make his/her students practice a different part of pronunciation, for example words with silent letters, or homonyms vs minimal pairs? And why even limit the scope to pronunciation-what about vocabulary, spelling, or grammar? If a teacher were able to clear the arrays of correctWords and incorrectWords on lines 206 and 207, they would amplify the possible uses of this game (in conjunction with the first feature on this list, naturally!). Some code that would enable a teacher to then alter or disable the message of the modal accordingly, as well as the instructions and the title, could offer a vast amount of new possibilities for the game.
+
+__Print option__
+  * This game was desgined to be played online, either with or without a teacher present. However, the vast majority of classes still take place face-to-face. With that in mind, the option to generate a labyrinth, with all of the cells filled in with words but not coloured in, which could then be easily exported as a pdf, would be an attractive one. This could then be printed and distributed to students.
+
+__Reduce repitition of code in script.js__
+  * Currently, the bulk of the game is coded between lines 5 and 185 of script.js. A lot of this code is very similar. As I improve my coding skills, I am sure I will find ways to condense this code and avoid having to copy and paste, and then change the element being called manually, which was a pain-staking and time-consuming process.
 
   ## __Technologies Used__
   * HTML was used to code the structure of the website, and CSS was used to style it. 
   * Balsamiq was used to create wireframes, to give a rough idea of how the website might look.
-  * TinyPNG was an essential tool to reduce the size of photos, while at the same time maintaining resolution.
   *  The repository is hosted on GitHub, which allowed for version control.
-  * Gitpod was the workspace used to code, and build the content of the website, which would then be committed to GitHub, where the respository is hosted.
+  * Gitpod was the workspace used to code, and build the content of the website, which would then be committed to GitHub.
   * Git was used for version control.
 
 ## __Testing__
 
-### Browser Compatibility
-* This site has been tested on three browsers for compatibility, as evidenced below:
-
-Google Chrome, laptop view:
-
-![Screenshot of website on Google Chrome](documentation/readme/laptop-view-chrome.png)
-
-Firefox, mobile view:
-
-![Screenshot of mobile view on Firefox](documentation/readme/mobile-view-firefox.png)
-
-Microsoft Edge, tablet view:
-
-![Screenshot of tablet view on Microsoft Edge](documentation/readme/tablet-view-edge.png)
-### Code Validation
-
-The code has passed through the code validators and no errors were found, as evidenced below:
-
-CSS
-
-![image of confirmation of CSS code validation](documentation/readme/css-code-validation.png)
-
-index.html:
-
-![image of confirmation of HTML code validation for index.html](documentation/readme/html-code-validator.png)
-
-walks.html:
-
-![image of confirmation of HTML code validation for walks.html](documentation/readme/walks-code-validation.png)
-
-contact.html:
-
-![image of confirmation of HTML code validation for contact.html](documentation/readme/contact-code-validation.png)
-
-
-### Responsiveness
-
-* The website has been tested for responsiveness on a variety of devices, as evidenced below:
-
-![Image of different website pages across multiple devices](documentation/readme/responsive-design.png)
+* All screenshots pertaining to browser compatability, code validation and responsiveness can be found in a separate document, a link to which can be found [here](TESTING.md).
 
 ### Problems encountered
 
