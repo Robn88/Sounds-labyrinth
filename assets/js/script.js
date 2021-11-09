@@ -185,12 +185,12 @@ document.getElementById("e6").addEventListener("click", function () {
 document.getElementById("f5").addEventListener("click", checkAnswer);
 
 //end game function
-document.getElementById("finish").addEventListener("click", function(){
+document.getElementById("finish").addEventListener("click", function () {
   let finalScore = document.getElementById("incorrect").innerText;
   if (finalScore == 0) {
     openModal();
-    let modalPerfectGameText = "Wow, perfect game! You made 0 mistakes! Congratulations!";
-    document.getElementById("modal-text").innerHTML = modalPerfectGameText;
+    let modalPerfectGameText = "Wow, perfect game! You made 0 mistakes! Congratulations!";
+    document.getElementById("modal-text").innerHTML = modalPerfectGameText;
   } else if (finalScore == 1) {
     openModal();
     let modalEndGameText = `You made it to the end, well done! You made only ${finalScore} mistake. Play again to try and get a perfect score!`;
