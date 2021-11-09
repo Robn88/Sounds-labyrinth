@@ -34,5 +34,5 @@ Javascript
 
 * The website has been tested for responsiveness on a variety of devices, as evidenced below:
 
-![Image of different website pages across multiple devices](documentation/readme/responsive-design.png)
+![Image of the website page across multiple devices](documentation/readme/responsive.png)
 
