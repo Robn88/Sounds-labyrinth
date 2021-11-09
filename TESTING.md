@@ -22,13 +22,19 @@ CSS
 
 ![image of confirmation of CSS code validation](documentation/readme/code_validation/css_validation.png)
 
+Link:  https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Frobn88.github.io%2FSounds-labyrinth
+
 index.html:
 
 ![image of confirmation of HTML code validation for index.html](documentation/readme/code_validation/html_validation.png)
 
+Link:  https://validator.w3.org/nu/?doc=https://robn88.github.io/Sounds-labyrinth/
+
 Javascript
 
 ![image of confirmation of validation of javascript](documentation/readme/code_validation/js_validation.png)
+
+Link:  https://jshint.com/
 
 ### Responsiveness
 

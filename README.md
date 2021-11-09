@@ -28,22 +28,22 @@ index.html wireframe:
 __Instructions section__
   * A section that gives the basic details on how to play the game, with an example, and the method to initiate the game.
 
-  ![]()
+  ![image of the instructions area](documentation/readme/instructions.png)
 
 __Score area__
   * A section that keeps a tally of correct and incorrect answers.
 
-  ![]()
+  ![image of the score area from the website](documentation/readme/score_area.png)
 
 __Table containing cells to be filled with words by Javascript__
   * A 6x6 table, with only 2 cells filled at the beginning indicating the start and the finish point. To begin with, no 'game' cells are visible; the first two will be revealed upon clicking 'Start'. Through javascript,when clicked, the cells will either be coloured red if an answer is incorrect, or green if correct. A correct answer has the additional effect of revealing more cells.
 
-  ![]()
+  ![image of the table from the website](documentation/readme/table.png)
 
   __The modal__
   * A modal, which is to be called when either a right or wrong answer is clicked, and additionally upon ending the game. The message displayed therein will vary according to how it is called. The modal has a number of interesting features. For example, it is all white, and when called, the background is dimmed, thus making it easier to read. In addition, a user can click anywhere outside of the modal, and not on the 'X', to close it.
 
-  ![]()
+  ![image of the modal from the website](documentation/readme/modal.png)
 
 ### __Features to be Implemented__
 
@@ -63,12 +63,14 @@ __Reduce repetition of code in script.js__
   * Currently, the bulk of the game is coded between lines 5 and 185 of script.js. A lot of this code is very similar. As I improve my coding skills, I am sure I will find ways to condense this code and avoid having to copy and paste, and then change the element being called manually, which was a pain-staking and time-consuming process.
 
   ## __Technologies Used__
-  * HTML was used to code the structure of the website, and CSS was used to style it. 
+  * HTML was used to code the structure of the website,
+  * CSS was used to apply styles to the website.
+  * JavaScript was used to make the website interactive, and to randomise the words appearing in the table.
   * Balsamiq was used to create wireframes, to give a rough idea of how the website might look.
-  *  The repository is hosted on GitHub, which allowed for version control.
+  *  The repository is hosted on GitHub.
   * Gitpod was the workspace used to code, and build the content of the website, which would then be committed to GitHub.
   * Git was used for version control.
-  * The website coolors.co was used to create 
+  * The website coolors.co was used to create the image for the colour scheme.
 
 ## __Testing__
 
@@ -86,9 +88,9 @@ __Reduce repetition of code in script.js__
 
 ## Deployment
 
-This project has been deployed to GitHub Pages.
-From the repository, I went to the "Settings" tab and selected "Pages" from the sub-menu.
-Once there, I selected the "main" branch from the dropdown, and then clicked the Save button.
+* This project has been deployed to GitHub Pages.
+* From the repository, I went to the "Settings" tab and selected "Pages" from the sub-menu.
+* Once there, I selected the "main" branch from the dropdown, and then clicked the Save button.
 
 The deployed site can be found [here](https://robn88.github.io/Sounds-labyrinth/).
 
@@ -98,7 +100,9 @@ If you would like to make a clone of this repository, you can type the following
 
 - `git clone https://github.com/Robn88/Sounds-labyrinth.git`
 
-Alternatively, if you are using Gitpod, you can simply click on the green Gitpod button at the top of the repository, and this will create a new workspace in your Gitpod account. [This link](https://gitpod.io/#https://github.com/Robn88/Sounds-labyrinth) will do the same thing for you if you do not see the green Gitpod button.
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Robn88/Sounds-labyrinth)
 
 ## Credits
 
@@ -106,6 +110,8 @@ Alternatively, if you are using Gitpod, you can simply click on the green Gitpod
 * The score counter on lines 24-28 of index.html, and the javascript related to counting the scores on lines 254-267 of script.js, is taken from the love-maths walkthrough project, a link to which can be found [here](https://github.com/Robn88/love-maths).
 
 * The getRandom function on lines 212 to 225 was adapted with only minor changes from code from the top answer on this page of [stackoverflow](https://stackoverflow.com/questions/50525909/random-item-from-array-with-no-repeat-using-javascript/50528028).
+
+* The modal, with HTML code on lines 82-90, CSS code from line 84-121, and JavaScript code from line 270-291, was taken from the W3schools website. A link to this can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp).
 
 ### Acknowledgements
 
