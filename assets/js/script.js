@@ -207,7 +207,7 @@ let correctWords = ["even", "Steven", "evil", "meet", "meat", "area", "legal", "
 let incorrectWords = ["bet", "left", "health", "dead", "breath", "live", "fitness", "bread", "ship", "felt", "England", "July", "fry", "silent", "think", "eleven", "met", "with", "difficult"];
 
 /*function that gets a random element from an array, checks to make sure it has not already been called,
- and pushes it to the array "answer"*/
+ and pushes it to the array "answer", adapted from stackoverflow forums, link in README*/
 
 function getRandom(count, arr) {
   let answer = [],
@@ -249,6 +249,8 @@ function checkAnswer() {
     incrementWrongAnswer();
   }
 }
+
+//Function to increase correct and incorrect score, taken from Love Math project, link in README
 
 //Gets the current score from the DOM and increments it by 1
 function incrementScore() {

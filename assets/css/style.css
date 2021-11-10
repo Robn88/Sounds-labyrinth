@@ -80,7 +80,8 @@ td {
   background-color: rgb(255, 0, 0);
 }
 
-/* The Modal (background) */
+/* The Modal CSS, adapted from W3schools- link in credit section in README*/
+/*background */
 .modal {
   display: none;
   position: fixed;

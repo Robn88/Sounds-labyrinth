@@ -14,6 +14,7 @@ Firefox, tablet view:
 Microsoft Edge, mobile view:
 
 ![Screenshot of mobile view on Microsoft Edge](documentation/readme/edge_mobile_view.png)
+
 ### Code Validation
 
 The code has passed through the code validators and no errors were found, as evidenced below:
@@ -35,6 +36,8 @@ Javascript
 ![image of confirmation of validation of javascript](documentation/readme/code_validation/js_validation.png)
 
 Link:  https://jshint.com/
+
+* Passing the JavaScript through the code validator does not give any errors, although it does give a warning. Despite this warning, the code functions exactly as intended, and no bugs have been produced during all of the testing.
 
 ### Responsiveness
 
