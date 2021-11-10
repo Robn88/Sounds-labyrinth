@@ -35,6 +35,11 @@ __Score area__
 
   ![image of the score area from the website](documentation/readme/score_area.png)
 
+  __Restart button__
+  * A button that when pressed, reloads the page.
+
+  ![image of the restart button from the website](documentation/readme/restart_button.png)
+
 __Table containing cells to be filled with words by Javascript__
   * A 6x6 table, with only 2 cells filled at the beginning indicating the start and the finish point. To begin with, no 'game' cells are visible; the first two will be revealed upon clicking 'Start'. Through javascript,when clicked, the cells will either be coloured red if an answer is incorrect, or green if correct. A correct answer has the additional effect of revealing more cells.
 
