@@ -4,8 +4,9 @@
 
 let resetBtn = document.getElementById("restart");
 resetBtn.addEventListener("click", reloadGame);
+
 function reloadGame() {
-    location.reload();
+  location.reload();
 }
 
 //Starts the game
@@ -275,6 +276,8 @@ function incrementWrongAnswer() {
   document.getElementById("incorrect").innerText = ++oldScore;
 
 }
+
+//Modal adapted from W3schools- link in credit section in README
 
 // Get the modal
 let modal = document.getElementById("myModal");
