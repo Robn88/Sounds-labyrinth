@@ -1,5 +1,13 @@
 /* jshint esversion: 8 */
 
+//Restarts the game on clicking the restart button
+
+let resetBtn = document.getElementById("restart");
+resetBtn.addEventListener("click", reloadGame);
+function reloadGame() {
+    location.reload();
+}
+
 //Starts the game
 
 document.getElementById("start").addEventListener("click", function () {
@@ -267,7 +275,6 @@ function incrementWrongAnswer() {
   document.getElementById("incorrect").innerText = ++oldScore;
 
 }
-
 
 // Get the modal
 let modal = document.getElementById("myModal");
