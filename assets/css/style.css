@@ -58,6 +58,18 @@ td {
   text-align: center;
 }
 
+#start-game, #restart {
+  display: inline-block;
+}
+
+#restart {
+  font-family:"Zen Antique Soft" ;
+  font-size: 1em;
+  margin-left: 5vw ;
+  background-color: white;
+}
+
+
 /*prevents pointer-events from being fired out of order*/
 .word {
   pointer-events: none;
