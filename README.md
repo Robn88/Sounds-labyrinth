@@ -47,8 +47,11 @@ __Table containing cells to be filled with words by Javascript__
 
 ### __Features to be Implemented__
 
-__A truly random maze path__
+__A truly random labyrinth path__
   * As it currently stands, the major drawback of the game is that the path from start to finish is predefined. Therefore, there is little to no replayability, despite the randomness of the words. Consequently, the most urgent feature to be implemented in the future should be a way to randomise the layout of the maze, to greatly magnify the replayability. I currently lack the coding knowledge to do this; however, this is something that I believe can be done.
+
+  __A bigger labyrinth, with more possibilities__
+  * Another downside of the current setup is that the relatively small size of the maze limits options for as to where you can move. In order to add the maximum amount of possible correct sounds, there are currently cells where only one answer is possible. There is a way in which this could be eliminated. One solution would be to make the table larger, and to avoid having the path through the labyrinth touch the outer cells, except at the beginning and end, although this in itself would add an element of predictability.
 
 __Create sound button__
   * An interesting option that I had considered when creating the site would be to create a button with a 'sound' icon that, when pressed, models the pronunciation of the word. There are also different ways that this could potentially be implemented. For example, for very low level learners, this could be a feature in the game at the start, to help them when choosing the word. However, for most learners, this would make the game too easy; instead, what might be preferable would be to have this feature enabled upon completing the game; that way, they would be able to focus on incorrect answers, or answers where they weren't sure, or were only able to get the right answer through deduction (i.e, they are certain that one of the words does not have the correct sound, therefore it must be the other, even if they are unsure of its pronunciation).
