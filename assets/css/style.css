@@ -58,14 +58,15 @@ td {
   text-align: center;
 }
 
-#start-game, #restart {
+#start-game,
+#restart {
   display: inline-block;
 }
 
 #restart {
-  font-family:"Zen Antique Soft" ;
+  font-family: "Zen Antique Soft";
   font-size: 1em;
-  margin-left: 5vw ;
+  margin-left: 2vw;
   background-color: white;
 }
 
@@ -160,6 +161,10 @@ td {
   #score-area {
     width: 30vw;
     font-size: 1rem;
+  }
+
+  #restart {
+    margin-left: 0;
   }
 }
 
